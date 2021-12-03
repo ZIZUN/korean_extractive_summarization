@@ -121,8 +121,6 @@ if __name__ == '__main__':
         #  -model_path {MODEL_DIR} 
         # args.max_tgt_len=140  이거 수정해도 효과가 거의 없음
 
-        os.system(f"python make_submission.py result_{model_folder}_{model_name}.candidate")
-
     elif args.task == 'rouge':
         pass
         # rouge_scorer = RougeScorer()
