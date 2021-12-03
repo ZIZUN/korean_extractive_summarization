@@ -36,16 +36,9 @@ if __name__ == '__main__':
     # now = time.strftime('%m%d_%H%M')
     now = "1209_1236"
 
-    # python main.py -task install
-    if args.task == 'install':
-        os.chdir(PROJECT_DIR)
-        os.system("pip install -r requirements.txt")
-        os.system("pip install Cython")
-        os.system("python src/others/install_mecab.py")
-        os.system("pip install -r requirements_prepro.txt")
 
     # python main.py -task make_data -n_cpus 2
-    elif args.task == 'make_data':
+    if args.task == 'make_data':
         os.chdir(PROJECT_DIR + '/src')
         os.system("python make_data.py -task df")
         os.system(f"python make_data.py -task train_bert -target_summary_sent abs -n_cpus {args.n_cpus}")
