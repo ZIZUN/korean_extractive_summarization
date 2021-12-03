@@ -2,8 +2,9 @@ import json
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("-filename", default='result_1209_1236_step_13000.candidate.jsonl', type=str)
+args = parser.parse_args()
 
-with open(filename, 'r') as file:
+with open(args.filename, 'r') as file:
     json_list = list(file)
 
 sents = []
