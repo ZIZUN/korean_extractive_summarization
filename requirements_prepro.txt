@@ -1,0 +1,9 @@
+#Cython
+kss
+bs4
+pandas
+
+# test
+# py-rouge
+nltk
+konlpy
