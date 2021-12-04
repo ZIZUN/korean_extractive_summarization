@@ -30,16 +30,17 @@ python main.py -task train -target_summary_sent abs -visible_gpus 0
 ```
 
 4. Validation
+validation 해보려면 다음코드 실행하기. (path에 있는 모델파일 전부 validation하는 코드임.)
 ```console
-# validation 해보려면 다음코드 실행하기. (path에 있는 모델파일 전부 validation하는 코드임.)
 python main.py -task valid -model_path 1209_1236
 ```
 
 5. Test and submission 파일 생성
 ```console
 python main.py -task test -test_from 1209_1236/model_step_500.pt -visible_gpus 0
-
-# ext/results/ 폴더에 제출용 최종파일 생성(submission.json)
+```
+ext/results/ 폴더에 제출용 최종파일 생성(submission.json)
+```console
 %cd ext/results/
 !python get_submission.py -filename result_1209_1236_step_500.candidate.jsonl
 ```
