@@ -5,8 +5,8 @@
  ![1](./image/leaderboard.PNG)
 
 ## Notice
-
-+ 본 repo는 uoneway님 [KoBertSum](https://github.com/uoneway/KoBertSum) 레포지토리를 기반으로 만들어졌습니다.
++ 본 repo는 [Text Summarization with Pretrained Encoders](https://github.com/uoneway/KoBertSum)에 나오는 bertsumext모델(extractive summarization을 위해 bert위해 추가적으로 encoder 레이어를 얹은구조)의 bert klue/roberta-large모델로 대체하여 구성하였음.
++ uoneway님 [KoBertSum](https://github.com/uoneway/KoBertSum) 레포지토리를 기반으로 만들어졌습니다.
 + 수정된 부분 - pytorch 1.1 ->pytorch 1.7.1버전 지원하도록 수정.
 + 수정된 부분 - transformers 4.0 버전 지원하도록 수정, klue/roberta-large 포팅
 + 수정된 부분 - 불필요한 부분 삭제 or 수정
