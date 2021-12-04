@@ -37,8 +37,8 @@ python main.py -task valid -model_path 1209_1236
 5. Test and submission 파일 생성
 ```console
 python main.py -task test -test_from 1209_1236/model_step_500.pt -visible_gpus 0
-%cd ext/results/
-!python get_submission.py -filename result_1209_1236_step_500.candidate.jsonl
+cd ext/results/
+python get_submission.py -filename result_1209_1236_step_500.candidate.jsonl
 ```
 
 ## 포함되지 않은 부분
