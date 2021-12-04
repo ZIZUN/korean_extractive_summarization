@@ -16,6 +16,7 @@
 1. Environment Setting
 ```console
 pip install -r requirements.txt
+python src/others/install_mecab.py # mecab설치
 ```
 
 2. Preprocess( ./ext/data/raw/train.jsonl, ./ext/data/raw/test.jsonl이 있어야함)
@@ -43,8 +44,10 @@ python main.py -task test -test_from 1209_1236/model_step_500.pt -visible_gpus 0
 !python get_submission.py -filename result_1209_1236_step_500.candidate.jsonl
 ```
 
-## 대회 솔루션
+# 포함되지 않은 부분
 
+대회에선, voting을 이용한 ensemble 이용해서 rouge-L 53.15 -> 53.5 으로 끌어올렸는데,
+간단하니까 필요하신 분들은 구현해서 사용하시면 성능향상에 도움이 될 듯.
 
 
 ## Reference
