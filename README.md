@@ -48,7 +48,7 @@ python main.py -task test -test_from 1209_1236/model_step_500.pt -visible_gpus 0
 + 대회에선, voting을 이용한 ensemble 이용해서 rouge-L 53.15 -> 53.5 으로 끌어올렸는데,
 간단하니까 필요하신 분들은 구현해서 사용하시면 성능향상에 도움이 될 듯.
 
-+ 추가로 데이터셋 폼은 이런식으로, 구성됩니다.(세줄요약 데이터셋)
++ 추가로 데이터셋 폼(jsonl각 line)은 이런식으로, 구성됩니다.(세줄요약 데이터셋)
 ```
 {"category": "none", "id": 0, "article_original": ["","","","",""], "extractive": [2, 3, 4], "abstractive": "", "extractive_sents": ["", "", ""]}
 ```
