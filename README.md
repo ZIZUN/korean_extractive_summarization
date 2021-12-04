@@ -19,4 +19,6 @@ pip install -r requirements.txt
 
 ## Solution
 
-
+## Reference
+- [uoneway/KoBertSum](https://github.com/uoneway/KoBertSum)
+- [nlpyang/PreSumm](https://github.com/nlpyang/PreSumm)
