@@ -6,7 +6,7 @@
 
 ## Notice
 + 본 repo는 [Text Summarization with Pretrained Encoders](https://arxiv.org/pdf/1908.08345.pdf)에 나오는 bertsumext모델(extractive summarization을 위해 bert위에 추가적으로 inter-sentence 레이어를 얹은구조)의 bert를 klue/roberta-large모델로 대체하여 구성하였음.
-+ uoneway님 [KoBertSum](https://github.com/uoneway/KoBertSum) 레포지토리를 기반으로 만들어졌습니다.
++ uoneway님 [KoBertSum](https://github.com/uoneway/KoBertSum) 레포지토리를 기반으로 만들어짐.
 + 수정된 부분 - pytorch 1.1 ->pytorch 1.7.1버전 지원하도록 수정.
 + 수정된 부분 - transformers 4.0 버전 지원하도록 수정, klue/roberta-large 포팅
 + 수정된 부분 - 불필요한 부분 삭제 or 수정
@@ -46,7 +46,7 @@ python get_submission.py -filename result_1209_1236_step_500.candidate.jsonl
 + 대회에선, ensemble 이용해서 rouge-L 53.15 -> 53.5 으로 끌어올렸는데,
 간단하니까 필요하신 분들은 구현해서 사용하시면 성능향상에 도움이 될 듯.
 
-+ 추가로 데이터셋 폼(jsonl각 line)은 이런식으로, 구성됩니다.(세줄요약 데이터셋)
++ 추가로 데이터셋 폼(jsonl각 line)은 이렇게 구성됨(세줄요약 데이터셋)
 ```
 {"category": "none", "id": 0, "article_original": ["","","","",""], "extractive": [2, 3, 4], "abstractive": "", "extractive_sents": ["", "", ""]}
 ```
