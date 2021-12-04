@@ -31,7 +31,7 @@ python main.py -task train -target_summary_sent abs -visible_gpus 0
 
 4. Validation
 
-validation 해보려면 다음코드 실행하기. (path에 있는 모델파일 전부 validation하는 코드임.)
+- validation 해보려면 다음코드 실행하기. (path에 있는 모델파일 전부 validation하는 코드임.)
 ```console
 python main.py -task valid -model_path 1209_1236
 ```
